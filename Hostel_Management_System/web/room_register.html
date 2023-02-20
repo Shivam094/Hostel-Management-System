@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="a_index_css.css"> 
+
+    </head>
+    <body bgcolor="#ADD8E6">
+    <center><h1>Register Here For Room.</h1></center>
+        <form action="submit_student_details.jsp" method="post">
+      <label for="student_id">Student ID:</label>
+      <input type="text" id="student_id" name="student_id" required>
+        <label for="student_name">Student Name:</label>
+  <input type="text" id="student_name" name="student_name" required>
+
+  <label for="phone_number">Phone Number:</label>
+  <input type="number" id="phone_number" name="phone_number" required>
+
+  <label for="country">Country:</label>
+  <select id="country" name="country" required>
+    <option value="">Select Country</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Australia">Australia</option>
+  </select>
+
+  <label for="state">State:</label>
+  <input type="text" id="state" name="state" required>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Female</label>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" required>
+
+  <label for="guardian_name">Guardian's Name:</label>
+  <input type="text" id="guardian_name" name="guardian_name" required>
+
+  <label for="guardian_phone_number">Guardian's Phone Number:</label>
+  <input type="number" id="guardian_phone_number" name="guardian_phone_number" required>
+
+  <label>Room Type:</label>
+  <select id="country" name="room" required>
+    <option value="">Select Room</option>
+    <option value="Double">Double Sharing (Rs.1600/- month)</option>
+    <option value="Single">Single Room (Rs.1200/- month)</option>
+  </select>
+  
+  <label for="AdharCard">Aadhar Card:</label>
+  <input type="number" id="adharcard" name="adhar_no" required>
+  
+  <label>Stay Duration:</label>
+  <select id="duration" name="stay" required>
+    <option value="">Select Duration</option>
+    <option value="1">1 month</option>
+    <option value="2">3 month</option>
+    <option value="6">6 month</option>
+    <option value="12">12 month</option>
+  </select>
+  
+  <center>
+  <input type="submit" value="Submit" />
+  </center>
+  
+        </form>
+    </body>
+</html>
